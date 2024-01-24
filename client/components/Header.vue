@@ -2,7 +2,7 @@
   <header>
     <div class="navbar bg-base-100">
       <div class="flex-1">
-        <a class="btn btn-ghost text-xl">daisyUI</a>
+        <a class="btn btn-ghost text-xl">NextBlog</a>
       </div>
       <div class="flex-none">
         <div class="dropdown dropdown-end">
@@ -26,7 +26,4 @@
       </div>
     </div>
   </header>
-  <div class="p-4">
-    <h1>Welcome to the NuxtBlog</h1>
-  <button class="btn btn-sm btn-primary">Hello daisyUI</button>
-</div></template>
+</template>
