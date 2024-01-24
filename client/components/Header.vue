@@ -2,7 +2,7 @@
   <header>
     <div class="navbar bg-base-100">
       <div class="flex-1">
-        <a class="btn btn-ghost text-xl">NextBlog</a>
+        <NuxtLink to="/" class="btn btn-ghost text-xl">NextBlog</NuxtLink>
       </div>
       <div class="flex-none">
         <div class="dropdown dropdown-end">
@@ -14,13 +14,12 @@
           </div>
           <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
             <li>
-              <a class="justify-between">
+              <NuxtLink to="/profile">
                 Profile
-                <span class="badge">New</span>
-              </a>
+              </NuxtLink>
             </li>
-            <li><a>Settings</a></li>
-            <li><a>Logout</a></li>
+            <li><NuxtLink to="/settings">Settings</NuxtLink></li>
+            <li><NuxtLink to="/auth">Logout</NuxtLink></li>
           </ul>
         </div>
       </div>

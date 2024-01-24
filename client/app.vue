@@ -1,27 +1,14 @@
 <script>
-import EditorView from './components/EditorView.vue';
-import { ref } from 'vue'
-
-export default {
-    // `setup` is a special hook dedicated for the Composition API.
-    setup() {
-        const count = ref(0)
-
-        function increment() {
-            // .value is needed in JavaScript
-            count.value++
-        }
-
-        // expose the ref to the template
-        return {
-            count,
-            increment
-        }
-    }
-}
+import Header from "./components/Header.vue";
 
 </script>
 <template >
-    <EditorView />
-
+    <Header />
+    <div class="flex justify-between items-center p-4 bg-primary">
+    <h1 class="text-xl">Welcome to the NuxtBlog</h1>
+    <NuxtLink to="/blog/create" class="btn btn-sm btn-outline bg-white">New Article</NuxtLink>
+  </div>
+    <main class="bg-gray-50 h-screen p-4">
+        <NuxtPage />
+    </main>
 </template>

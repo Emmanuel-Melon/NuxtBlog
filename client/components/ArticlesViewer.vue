@@ -1,6 +1,5 @@
 <script>
 import { ref } from 'vue';
-import { createRouter, createWebHistory } from 'vue-router';
 import ArticleOverview from "./ArticleOverview.vue";
 
 export default {
@@ -35,7 +34,7 @@ export default {
 };
 </script>
 <template>
-    <section class="p-4">
+    <section>
         <div class="space-y-2">
             <div class="flex flex-wrap gap-4">
                 <div v-for="article in articles" :key="article.id">

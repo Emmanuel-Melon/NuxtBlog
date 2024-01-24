@@ -15,7 +15,6 @@ export default {
     };
  }
 };
-// console.log(article);
 </script>
 <template>
     <div class="card card-compact w-96 bg-base-100 shadow-xl grow">
